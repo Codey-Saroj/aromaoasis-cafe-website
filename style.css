@@ -134,8 +134,18 @@ nav li a {
   border-radius: 5px;
   cursor: pointer;
 }
+#btn,#btn2
+.btn {
+  background-color: #0bd10b;
+  color: white;
+  padding: 10px 20px;
+  font-size: 1rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
 .btn:hover {
-  background-color: #b97b16;
+  background-color: #12b2e7;color: white;
   transform: scale(1.05);
   transition: all 0.3s ease-in-out;
 }
@@ -380,8 +390,8 @@ html {
   padding: 80px 20px;
   background-color: rgba(255, 192, 203, 0.08);
   text-align: center;
-  height: 90vh;
-  max-height: 100vh;
+  height: 700px;
+  max-height: 600px;
 }
 
 .gallery-section h1 {
