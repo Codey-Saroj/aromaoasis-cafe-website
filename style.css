@@ -134,9 +134,10 @@ nav li a {
   border-radius: 5px;
   cursor: pointer;
 }
+.btn a{color: white;text-decoration: none;}
 #btn,#btn2
 .btn {
-  background-color: #0bd10b;
+  background-color: #d69020;
   color: white;
   padding: 10px 20px;
   font-size: 1rem;
@@ -145,10 +146,11 @@ nav li a {
   cursor: pointer;
 }
 .btn:hover {
-  background-color: #12b2e7;color: white;
+  background-color: #e79c12;color: white;
   transform: scale(1.05);
   transition: all 0.3s ease-in-out;
 }
+
 
 .story {
   display: flex;
