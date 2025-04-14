@@ -134,7 +134,7 @@ nav li a {
   border-radius: 5px;
   cursor: pointer;
 }
-.btn a{color: white;text-decoration: none;}
+#btn a{color: white;text-decoration: none;}
 #btn,#btn2
 .btn {
   background-color: #d69020;
