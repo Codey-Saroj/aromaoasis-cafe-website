@@ -3,36 +3,26 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <!-- Font Awesome CDN in the <head> tag -->
+    <title>AI For Good</title>
 
-
-</head>
-    <script>
-      window.addEventListener("scroll", function () {
-        const nav = document.querySelector(".nav-bar");
-        if (window.scrollY > 50) {
-          nav.classList.add("scrolled");
-        } else {
-          nav.classList.remove("scrolled");
-        }
-      });
-    </script>
+    <!-- Font Awesome Icons -->
     <link
-    rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
-  />
-  
-
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
+     
+    <!-- CSS File -->
     <link rel="stylesheet" href="style.css" />
-    
   </head>
+
   <body>
+    <!-- HEADER -->
     <div class="header">
+      <!-- NAVBAR -->
       <div class="nav-bar">
         <div class="logo">
           <a href="#">
-            <span id="logo1">AROMA</span><span id="logo2">OASIS</span>
+            <span id="logo1">AI</span><span id="logo2">FOR GOOD</span>
           </a>
         </div>
 
@@ -42,196 +32,336 @@
 
         <!-- Nav Menu -->
         <nav>
-          <li><a href="index.html">Home</a></li>
+          <li><a href="#">Home</a></li>
           <li><a href="#story">About</a></li>
-          <li><a href="#menu">Menu</a></li>
-          <li><a href="#gallery">Gallery</a></li>
-          <li><a href="#testimonial">Testimonial</a></li>
-          <li><a href="#contact">Contact</a></li>
+          <li><a href="#menu">Solutions</a></li>
+          <li><a href="#gallery">Impact</a></li>
+<li><a href="#faq">FAQ</a></li>
+<li><a href="#testimonial">Stories</a></li>
+<li><a href="#contact">Join</a></li>
         </nav>
       </div>
 
+      <!-- HERO SECTION -->
       <div class="hero">
-        <h1>Where Every Sip Tells a Story</h1>
+        <h1>AI for Good — Smart Solutions for Society</h1>
+
+        <!-- Sliding Changing Text -->
+        <h2>
+          <span id="changingText"></span>
+        </h2>
+
         <p>
-          Experience the warm embrace of our artisanal coffee and handcrafted
-          treats in a cozy atmosphere that feels just like home.
+          Discover how Artificial Intelligence is improving healthcare,
+          sustainability, education, and communities worldwide.
         </p>
-        <div class="btn"><a href="#menu">Explore Our Menu</a></div>
-        <div class="btn"><a href="#contact">Find us</a></div>
+
+        <div class="btn"><a href="#menu">Explore Solutions</a></div>
+        <div class="btn"><a href="#contact">Join the Movement</a></div>
       </div>
     </div>
+
+    <!-- MAIN CONTENT -->
     <main id="story">
+      <!-- ABOUT SECTION -->
       <div class="story">
-        <h1>Our Story</h1>
-        <p>A journey of passion,flavour and community</p>
+        <h1>Our Mission</h1>
+        <p>A journey of innovation, ethics, and social impact</p>
+
         <div class="content">
           <div class="con1">
-            <h2>A Home Away From Home</h2>
+            <h2>Technology with Purpose</h2>
+
             <p>
-              Founded in 2010, Aroma Oasis started as a small corner café with a
-              big dream: to create a space where people could disconnect from
-              the hustle of everyday life and reconnect with themselves and
-              others over exceptional coffee.
+              AI for Good is about building intelligent systems that empower
+              humanity — not replace it.
             </p>
+
             <p>
-              Our founders, Mr.Haze and Lara, traveled across the world to
-              source the finest coffee beans, developing relationships with
-              farmers who share our commitment to quality, sustainability, and
-              ethical practices.
+              From rural healthcare to climate monitoring, responsible AI can
+              solve real-world challenges and improve lives at scale.
             </p>
+
             <p>
-              Today, we're proud to be a beloved neighborhood institution, where
-              regulars are greeted by name and newcomers quickly feel like
-              they've been coming here for years. Every cup we serve carries our
-              story—one of passion, perseverance, and the perfect brew.
+              Our goal is to showcase ethical, sustainable, and human-centered
+              AI innovations that create a better future for everyone.
             </p>
           </div>
+
           <div class="con2">
-            <img src="imgs/mr.haze.webp" alt="Mr.Haze & Lara" />
+            <!-- 🔥 INSERT ABOUT IMAGE HERE -->
+            <img src="imgs/The-Seven-Chakras.png" alt="AI for Society" />
           </div>
         </div>
       </div>
+
+      <!-- SOLUTIONS SECTION -->
       <div class="menus" id="menu">
-        <h1>Our Menu</h1>
-        <p>Carefully crafted with the finest ingredients</p>
+        <h1>AI Solutions</h1>
+        <p>Smart innovations designed to help people and planet</p>
+
         <div class="bttns">
-          <button>Coffee</button>
-          <button>Tea</button>
-          <button>Pastries</button>
-          <button>Lunch</button>
-        </div>
+  <button onclick="filterCards('all')">All</button>
+  <button onclick="filterCards('health')">Healthcare</button>
+  <button onclick="filterCards('env')">Environment</button>
+  <button onclick="filterCards('edu')">Education</button>
+</div>
+
+
         <div class="flex">
-          <div class="menu-lists">
-            <div class="divv"><img src="imgs/cafe4.webp"  alt="" /></div>
-            <div class="details">
-              <h3>Classic Espresso</h3>
-              <div id="price">$3.50</div>
+          <!-- Solution Card 1 -->
+         <div class="menu-lists" data-category="health">
+
+            <div class="divv">
+              <!-- 🔥 INSERT SOLUTION IMAGE HERE -->
+              <img src="imgs/images.jpeg" alt="Healthcare AI" />
             </div>
-            <p>Rich and robust single shot of pure cofee essance</p>
+
+            <div class="details">
+              <h3>AI Health Diagnostics</h3>
+              <div id="price">Impact: High</div>
+            </div>
+
+            <p>Early disease detection and smarter healthcare access for all.</p>
           </div>
-          <div class="menu-lists">
-            <div class="divv"><img src="imgs/cafe3.webp" alt="" /></div>
-            <div class="details">
-              <h3>Cappuccino</h3>
-              <div id="price">$4.75</div>
+
+          <!-- Solution Card 2 -->
+         <div class="menu-lists" data-category="env">
+
+            <div class="divv">
+              <!-- 🔥 INSERT SOLUTION IMAGE HERE -->
+              <img src="imgs/Eco.webp" alt="Green AI" />
             </div>
-            <p>Equal parts espresso,steamed milk and silky microfoam</p>
+
+            <div class="details">
+              <h3>Green AI Agriculture</h3>
+              <div id="price">Impact: Sustainable</div>
+            </div>
+
+            <p>Reducing pesticide waste and improving crop yield using AI.</p>
           </div>
-          <div class="menu-lists">
-            <div class="divv"><img src="imgs/cafe2.webp"  alt="" /></div>
-            <div class="details">
-              <h3>Caramel Macchiato</h3>
-              <div id="price">$5.25</div>
+
+          <!-- Solution Card 3 -->
+          <div class="menu-lists" data-category="edu">
+
+            <div class="divv">
+              <!-- 🔥 INSERT SOLUTION IMAGE HERE -->
+              <img src="imgs/educ.jpg" alt="AI Education" />
             </div>
-            <p>Vanilla-infused milk topped with espresso and caramel drizzle</p>
+
+            <div class="details">
+              <h3>AI Learning Companion</h3>
+              <div id="price">Impact: Inclusive</div>
+            </div>
+
+            <p>Personalized tutoring support for students anywhere.</p>
           </div>
         </div>
       </div>
+
+      <!-- FEATURED INNOVATIONS -->
       <div class="specials">
-        <h1>Todays Specials</h1>
-        <p>Limited time offering crafted just for you</p>
+        <h1>Featured Innovations</h1>
+        <p>Real AI projects creating measurable change today</p>
+
         <div class="items">
+          <!-- Innovation 1 -->
           <div class="special-item">
-            <img
-              src="imgs/special1.webp"
-              alt="Special Item Image"
-            />
+            <!-- 🔥 INSERT FEATURE IMAGE HERE -->
+            <img src="imgs/disaster.png" alt="Disaster AI" />
+
             <div class="special-content">
-              <h3>Delicious Pasta</h3>
+              <h3>AI Disaster Prediction</h3>
               <p>
-                A classic Italian dish made with fresh ingredients and rich
-                flavors.
+                Helping communities prepare for floods and emergencies through
+                predictive intelligence.
               </p>
+
               <div class="price-special">
-                <span>₹250</span>
-                <span>⭐ 4.5</span>
+                <span>Global Impact</span>
+                <span>⭐ 4.8</span>
               </div>
             </div>
           </div>
 
-          <!-- Special Item 2 -->
+          <!-- Innovation 2 -->
           <div class="special-item">
-            <img
-              src="imgs/special2.webp"
-              alt="Special Item Image"
-            />
+            <!-- 🔥 INSERT FEATURE IMAGE HERE -->
+            <img src="imgs/download.jpeg" alt="Clean Water AI" />
+
             <div class="special-content">
-              <h3>Veggie Delight</h3>
+              <h3>Clean Water Monitoring AI</h3>
               <p>
-                Healthy and tasty mix of fresh seasonal vegetables with spices.
+                Detecting contamination in rural water systems to ensure safe
+                drinking water.
               </p>
+
               <div class="price-special">
-                <span>₹180</span>
-                <span>⭐ 4.2</span>
+                <span>Social Benefit</span>
+                <span>⭐ 4.7</span>
               </div>
             </div>
           </div>
         </div>
       </div>
-      <section id="gallery" class="gallery-section">
-        <h1>Our Gallery</h1>
-        <p>
-          Take a glimpse into the cozy corners, aromatic brews, and sweet
-          delights of Aroma Oasis.
-        </p>
-        <div class="gallery">
-          <div class="gallery-item">
-            <img src="imgs/gal3.webp" alt="Cozy corner table" />
-            <div class="desc">Cozy Corner Table</div>
-          </div>
 
-          <div class="gallery-item">
-            <img src="imgs/gal2.webp" alt="Outdoor seating" />
-            <div class="desc">Sunny Outdoor Seating</div>
-          </div>
-          <div class="gallery-item">
-            <img src="imgs/gal1.webp" alt="Cozy corner table" />
-            <div class="desc">Privacy and comfortable zone</div>
-          </div>
-          <p id="quote">
-            <i
-              >“Our gallery isn’t just a collection of images—it’s a window into
-              the heart of what we do. Each snapshot captures a moment of joy, a
-              burst of flavor, and the warmth of shared experiences.”</i
-            >
-          </p>
+      <!-- IMPACT GALLERY -->
+     <div class="gallery">
+  <div class="gallery-item">
+    <img src="imgs/Grsph.webp" alt="AI Clinics" />
+    <div class="desc">AI-Powered Rural Clinics</div>
+  </div>
 
-          <!-- Add more gallery items as needed -->
-        </div>
-      </section>
-      <div class="specials" id="testimonial">
-        <h1>What Our Customer Say</h1>
-        <p>The experiences and stories from our beloved community</p>
-        <div class="items" id="items1">
-          <div class="special-item">
-            <img
-              src="imgs/blogger.webp"
-              alt="Special Item Image"
-            />
-            <div class="special-content">
-              <div><b>⭐⭐⭐⭐</b><b style="font-size: 1.3rem">☆</b></div>
-              <p>
-                <i
-                  >The pastries were exceptional! Each one is clearly made with
-                  care and quality ingredients their almond croissant is
-                  unmatched anywhere else in the city-perfectly flaky with just
-                  the right amount of filling"</i
-                >
-              </p>
-              <p><b>Mr G.K Sharma</b></p>
-              <p style="font-size: 0.9rem; color: rgba(128, 128, 128, 0.735)">
-                Food Blogger
-              </p>
-            </div>
-          </div>
-        </div>
+  <div class="gallery-item">
+    <img src="imgs/Green.png" alt="Smart Farming" />
+    <div class="desc">Smart Farming Intelligence</div>
+  </div>
+
+  <div class="gallery-item">
+    <img src="imgs/educ.jpg" alt="AI Education" />
+    <div class="desc">Inclusive AI Classrooms</div>
+  </div>
+</div>
+
+<!-- Quote should be OUTSIDE gallery -->
+<p id="quote">
+  <i>
+    “AI is not just innovation — it is a responsibility toward
+    humanity, equity, and the planet.”
+  </i>
+</p>
+
+      <!-- IMPACT STATS SECTION -->
+<section class="impact-stats">
+  <h1>AI Impact in Numbers</h1>
+  <p>Real measurable change powered by responsible AI</p>
+
+  <div class="stats-container">
+    <div class="stat-box">
+      <h2 class="counter" data-target="10000">0</h2>
+      <p>Lives Improved</p>
+    </div>
+
+    <div class="stat-box">
+      <h2 class="counter" data-target="250">0</h2>
+      <p>Communities Supported</p>
+    </div>
+
+    <div class="stat-box">
+      <h2 class="counter" data-target="75">0</h2>
+      <p>AI Projects Deployed</p>
+    </div>
+  </div>
+</section>
+<!-- TESTIMONIAL SLIDER SECTION -->
+<section class="specials" id="testimonial">
+  <h1>Stories of AI for Social Good</h1>
+  <p>Real voices from communities empowered by ethical AI</p>
+
+  <div class="testimonial-slider">
+
+    <!-- Slide 1 -->
+    <div class="testimonial active">
+      <h3>🌱 Green Intelligence for Farmers</h3>
+      <p>
+        “AI-powered crop monitoring helped our village reduce pesticide use
+        and increase harvest yield sustainably.”
+      </p>
+      <span>- Rural Agriculture Community</span>
+    </div>
+
+    <!-- Slide 2 -->
+    <div class="testimonial">
+      <h3>🏥 Healthcare Support in Remote Areas</h3>
+      <p>
+        “AI health kiosks are making diagnosis faster and more accessible
+        for families who live far from hospitals.”
+      </p>
+      <span>- Local Health Worker</span>
+    </div>
+
+    <!-- Slide 3 -->
+    <div class="testimonial">
+      <h3>📚 Education for Every Child</h3>
+      <p>
+        “Smart AI tutors are helping children learn better, even in areas
+        with limited teachers.”
+      </p>
+      <span>- NGO Education Partner</span>
+    </div>
+
+    <!-- Buttons -->
+    <div class="slider-controls">
+      <button id="prevBtn">⬅</button>
+      <button id="nextBtn">➡</button>
+    </div>
+
+  </div>
+</section>
+
+
+      <!-- STORIES -->
+     <!-- FAQ SECTION -->
+<section class="faq-section" id="faq">
+  <h1>Frequently Asked Questions</h1>
+  <p>Common questions about AI for Good and ethical innovation</p>
+
+  <div class="faq-container">
+
+    <div class="faq-item">
+      <button class="faq-question">
+        What does “AI for Good” mean?
+        <span>+</span>
+      </button>
+      <div class="faq-answer">
+        AI for Good refers to using artificial intelligence to solve real-world
+        social challenges like healthcare, climate change, education, and safety.
       </div>
+    </div>
+
+    <div class="faq-item">
+      <button class="faq-question">
+        How is AI helping rural communities?
+        <span>+</span>
+      </button>
+      <div class="faq-answer">
+        AI supports rural clinics, smart agriculture, early disaster warnings,
+        and access to education through digital tools.
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <button class="faq-question">
+        Is AI always safe and ethical?
+        <span>+</span>
+      </button>
+      <div class="faq-answer">
+        AI must be designed responsibly with fairness, transparency, privacy,
+        and human oversight to ensure it benefits society.
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <button class="faq-question">
+        How can I contribute to AI for Good projects?
+        <span>+</span>
+      </button>
+      <div class="faq-answer">
+        You can contribute by learning AI, joining open-source initiatives,
+        supporting ethical research, or building solutions for your community.
+      </div>
+    </div>
+
+  </div>
+</section>
+
+
+      <!-- CONTACT -->
       <section class="contact-section" id="contact">
-        <h2>Contact Us</h2>
+        <h2>Join the Movement</h2>
         <p>
-          We’d love to hear from you! Feel free to reach out using the form
-          below.
+          Have an idea where AI can help society? Let’s collaborate and build
+          solutions together.
         </p>
 
         <div class="contact-container">
@@ -242,70 +372,44 @@
             <button type="submit">Send Message</button>
           </form>
 
-          <div class="contact-info" id="contact">
+          <div class="contact-info">
             <h3>Get in Touch</h3>
-            <p><strong>Email:</strong> haze@yahoo.com</p>
-            <p><strong>Phone:</strong> +91 12345 67890</p>
-            <p>
-              <strong>Address:</strong> Chander Nagar Park, Saharanpur, Uttar
-              Pradesh
-            </p>
-
-            <!-- Google Map iframe -->
-            <div class="map-container">
-              <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13828.06139730963!2d77.52348487238929!3d29.95023711443533!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390eebad2a537891%3A0xe98fb1723613d42e!2sAROMA%20CAFE%20%26%20MOCKTAILS!5e0!3m2!1sen!2sin!4v1744277299657!5m2!1sen!2sin"
-                width="600"
-                height="450"
-                style="border: 0"
-                allowfullscreen=""
-                loading="lazy"
-                referrerpolicy="no-referrer-when-downgrade"
-                width="100%"
-                height="200"
-                style="border: 0; border-radius: 8px"
-                allowfullscreen=""
-                loading="lazy"
-                referrerpolicy="no-referrer-when-downgrade"
-              ></iframe>
-            </div>
+            <p><strong>Email:</strong> ai4good@gmail.com</p>
+            <p><strong>Phone:</strong> +91 98765 43210</p>
+            <p><strong>Address:</strong> Innovation Hub, India</p>
           </div>
         </div>
       </section>
     </main>
+
+    <!-- FOOTER -->
     <footer>
       <div class="footer-container">
         <div class="footer-section">
-          <div class="footer-logo">AROMA<span>OASIS</span></div>
-          <p>
-            Creating moments of joy through exceptional coffee and warm
-            hospitality.
-          </p>
+          <div class="footer-logo">AI<span>FOR GOOD</span></div>
+          <p>Building responsible AI solutions for people, planet, and progress.</p>
+
           <div class="social-icons">
-           
             <a href="#"><i class="fab fa-facebook-f"></i></a>
             <a href="#"><i class="fab fa-instagram"></i></a>
             <a href="#"><i class="fab fa-twitter"></i></a>
           </div>
-          
         </div>
 
-        <!-- Quick Links -->
         <div class="footer-section quick-links">
           <h3>Quick Links</h3>
           <ul>
             <li><a href="#">Home</a></li>
-            <li><a href="#">About Us</a></li>
-            <li><a href="#">Our Menu</a></li>
-            <li><a href="#">Gallery</a></li>
-            <li><a href="#">Contact</a></li>
+            <li><a href="#story">About</a></li>
+            <li><a href="#menu">Solutions</a></li>
+            <li><a href="#contact">Join</a></li>
           </ul>
         </div>
 
-        <!-- Newsletter -->
         <div class="footer-section newsletter">
           <h3>Subscribe</h3>
-          <p>Subscribe to our newsletter for news and special offers.</p>
+          <p>Subscribe for updates on ethical AI innovations.</p>
+
           <form>
             <input type="email" placeholder="Your email" />
             <button type="submit">Subscribe</button>
@@ -313,7 +417,25 @@
         </div>
       </div>
 
-      <div class="footer-bottom">© 2025 Aroma Oasis. All rights reserved.</div>
+      <div class="footer-bottom">
+        © 2026 AI For Good. All rights reserved.
+      </div>
     </footer>
+
+    <!-- SCRIPT FILE -->
+        <!-- BACK TO TOP BUTTON -->
+   <!-- BACK TO TOP BUTTON -->
+<button id="topBtn">↑</button>
+<div id="lightbox">
+  <span id="closeLightbox">✖</span>
+  <img id="lightboxImg" src="" alt="Preview">
+</div>
+
+<script src="script.js"></script>
+<!-- LIGHTBOX POPUP -->
+
+
+
   </body>
 </html>
+
